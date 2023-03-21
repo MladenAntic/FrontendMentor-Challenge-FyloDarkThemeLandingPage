@@ -1,0 +1,347 @@
+@media screen and (max-width: 768px) {
+  #navigation {
+    padding: 1.5625rem;
+    margin-bottom: 3.125rem;
+  }
+
+  .logo {
+    width: 6.25rem;
+  }
+
+  .nav-links {
+    gap: 1.25rem;
+  }
+
+  .nav-link a {
+    font-size: 0.875rem;
+  }
+
+  .illustration-intro {
+    width: 80%;
+  }
+
+  .hero-title {
+    font-size: 1.25rem;
+    width: 70%;
+  }
+
+  .break {
+    display: none;
+  }
+
+  .hero-description {
+    width: 67.5%;
+    font-size: 0.75rem;
+  }
+
+  .bg-curvy-desktop {
+    display: none;
+  }
+
+  .bg-curvy-mobile {
+    display: block;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 37.5%;
+    z-index: -1;
+  }
+
+  #features {
+    margin-top: -12.8125rem;
+    padding-top: 21.875rem;
+    z-index: -1;
+  }
+
+  .features-top,
+  .features-bottom {
+    flex-direction: column;
+  }
+
+  .feature-description {
+    font-size: 0.75rem;
+  }
+
+  #stay-productive {
+    flex-direction: column;
+  }
+
+  .illustration-stay-productive,
+  .stay-productive-content {
+    width: 80%;
+  }
+
+  .stay-productive-description {
+    font-size: 0.875rem;
+  }
+
+  #testimonials {
+    flex-direction: column;
+    padding: 0 4.6875rem 21.875rem;
+  }
+
+  .bg-quotes {
+    left: 13%;
+    top: -3.5%;
+  }
+
+  .quote {
+    font-size: 0.75rem;
+  }
+
+  #newsletter {
+    bottom: -5%;
+    width: 80%;
+  }
+
+  .newsletter-title {
+    font-size: 1.5rem;
+    margin-bottom: -0.9375rem;
+  }
+
+  .newsletter-description {
+    font-size: 0.75rem;
+    width: 80%;
+    margin: 1.875rem auto;
+  }
+
+  form {
+    flex-direction: column;
+    gap: 1.5625rem;
+  }
+
+  input,
+  button {
+    width: 100%;
+  }
+
+  .error-message {
+    bottom: 0;
+    top: 42%;
+    left: 2.5%;
+    font-size: 0.625rem;
+  }
+
+  #footer {
+    padding-top: 17.1875rem;
+  }
+
+  .footer-logo {
+    margin-left: 2.8125rem;
+  }
+
+  .footer-info {
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .location-paragraph {
+    width: 87.5%;
+    margin: 0 auto 1.25rem;
+  }
+
+  .footer-nav-links {
+    width: 100%;
+    margin-top: 4.6875rem;
+  }
+
+  .social-icons {
+    width: 100%;
+    margin-top: 1.875rem;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 501px) and (max-width: 768px) {
+  .bg-curvy-mobile {
+    bottom: 10%;
+  }
+
+  #features {
+    margin-top: -4.375rem;
+  }
+}
+
+@media screen and (width: 280px) {
+  .logo {
+    width: 3.125rem;
+  }
+
+  .nav-links {
+    gap: 0.9375rem;
+  }
+
+  .nav-link a {
+    font-size: 0.625rem;
+  }
+
+  .hero-title {
+    font-size: 0.875rem;
+    margin: 0.9375rem auto;
+  }
+
+  .hero-description {
+    font-size: 0.5rem;
+  }
+
+  #features {
+    margin-top: -9.375rem;
+    padding-top: 17.1875rem;
+  }
+
+  .feature-title {
+    font-size: 0.875rem;
+  }
+
+  .feature-description {
+    font-size: 0.625rem;
+    width: 100%;
+  }
+
+  .stay-productive-title {
+    font-size: 1.5rem;
+  }
+
+  .stay-productive-description {
+    font-size: 0.75rem;
+  }
+
+  #testimonials {
+    padding: 0 1.875rem 21.875rem;
+  }
+
+  #newsletter {
+    padding: 1.5625rem;
+  }
+
+  .newsletter-title {
+    font-size: 1rem;
+  }
+
+  .newsletter-description {
+    width: 100%;
+    font-size: 0.625rem;
+  }
+
+  input {
+    font-size: 0.625rem;
+  }
+
+  button {
+    font-size: 0.75rem;
+  }
+
+  .error-message {
+    top: 39%;
+    font-size: 0.5rem;
+  }
+}
+
+@media screen and (width: 360px) {
+  #features {
+    margin-top: -11.875rem;
+  }
+}
+
+@media screen and (width: 540px) {
+  .bg-curvy-mobile {
+    bottom: 17.5%;
+  }
+
+  #features {
+    margin-top: -6.25rem;
+    padding-top: 12.5rem;
+  }
+}
+
+@media screen and (width: 768px) {
+  .bg-curvy-mobile {
+    bottom: 2.5%;
+  }
+
+  #features {
+    margin-top: -1.5625rem;
+    padding-top: 12.5rem;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .hero-title {
+    width: 80%;
+  }
+
+  .hero-br {
+    display: block;
+  }
+
+  .hero-description {
+    width: 60%;
+  }
+
+  .bg-curvy-desktop {
+    bottom: -28%;
+  }
+
+  .get-started-btn {
+    font-size: 0.75rem;
+  }
+
+  #features {
+    padding-bottom: 14.0625rem;
+  }
+
+  #stay-productive {
+    flex-direction: column;
+  }
+
+  .stay-productive-content {
+    width: 80%;
+  }
+
+  #testimonials {
+    padding: 0 3.125rem 18.75rem;
+  }
+
+  #newsletter {
+    width: 75%;
+  }
+
+  .error-message {
+    left: 5%;
+  }
+
+  #footer {
+    font-size: 0.75rem;
+  }
+
+  .footer-logo {
+    margin-left: 1.875rem;
+  }
+
+  .icon-location {
+    left: -12%;
+  }
+
+  .footer-nav-links {
+    width: 8.5%;
+  }
+
+  .social-icons a {
+    padding: 0.25rem 0.5625rem;
+  }
+
+  .social-icons a i {
+    font-size: 0.75rem;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  .error-message {
+    left: 4%;
+  }
+
+  .footer-nav-links {
+    width: 9%;
+  }
+}

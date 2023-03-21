@@ -1,0 +1,401 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+
+:root {
+  --intro-and-email-bg: hsl(217, 28%, 15%);
+  --main-bg: hsl(218, 28%, 13%);
+  --footer-bg: hsl(216, 53%, 9%);
+  --testimonials-bg: hsl(219, 30%, 18%);
+  --cyan: hsl(176, 68%, 64%);
+  --blue: hsl(198, 60%, 50%);
+  --error: hsl(0, 100%, 63%);
+
+  --headings-cta-nav: "Raleway", sans-serif;
+  --body: "Open Sans", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--intro-and-email-bg);
+  font-family: var(--body);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--headings-cta-nav);
+  font-weight: 700;
+}
+
+ul {
+  list-style: none;
+}
+
+main {
+  position: relative;
+}
+
+#navigation {
+  background: var(--intro-and-email-bg);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.5rem;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 3.125rem;
+}
+
+.nav-link a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav-link a:hover {
+  text-decoration: underline;
+}
+
+#hero {
+  text-align: center;
+  position: relative;
+}
+
+.hero-title,
+.hero-description {
+  color: #fff;
+  position: relative;
+  z-index: 10;
+}
+
+.hero-title {
+  font-size: 2rem;
+  width: 40%;
+  margin: 1.875rem auto;
+  line-height: 1.5;
+}
+
+.hero-br {
+    display: none;
+}
+
+.hero-description {
+  width: 35%;
+  margin: 0 auto 1.5625rem;
+  line-height: 1.5;
+}
+
+.get-started-btn {
+  font-family: var(--headings-cta-nav);
+  font-weight: 700;
+  display: inline-block;
+  text-decoration: none;
+  background: linear-gradient(150deg, var(--cyan), var(--blue));
+  color: #fff;
+  padding: 0.625rem 3.75rem;
+  border-radius: 3.125rem;
+  position: relative;
+  z-index: 10;
+}
+
+.get-started-btn:hover {
+  background: hsl(176, 68%, 75%);
+}
+
+.bg-curvy-desktop {
+  position: absolute;
+  left: 0;
+  bottom: -27.5%;
+  width: 100%;
+  z-index: 1;
+}
+
+.bg-curvy-mobile {
+  display: none;
+}
+
+#features {
+  background: var(--main-bg);
+  margin-top: 14.0625rem;
+  position: relative;
+  z-index: 100;
+  padding-bottom: 9.375rem;
+}
+
+.features-top,
+.features-bottom {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 70%;
+  margin: 0 auto;
+  gap: 4.6875rem;
+}
+
+.features-top {
+  margin-bottom: 4.6875rem;
+}
+
+.feature-title,
+.feature-description {
+  color: #fff;
+}
+
+.feature-title {
+  margin: 0.625rem 0;
+}
+
+.feature-description {
+  font-size: 0.875rem;
+  width: 80%;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+#stay-productive {
+  background: var(--main-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6.25rem;
+  padding-bottom: 9.375rem;
+}
+
+.stay-productive-content {
+  width: 40%;
+}
+
+.stay-productive-title,
+.stay-productive-description {
+  color: #fff;
+}
+
+.stay-productive-title {
+  font-size: 2.5rem;
+}
+
+.stay-productive-description {
+  line-height: 1.5;
+}
+
+.stay-productive-description-top {
+  margin: 1.25rem 0;
+}
+
+.stay-productive-description-bottom {
+  margin-bottom: 1.25rem;
+}
+
+.how-it-works {
+  text-decoration: none;
+  display: block;
+  color: var(--cyan);
+  margin-bottom: 3.125rem;
+}
+
+.how-it-works:hover {
+  opacity: 0.75;
+}
+
+.how-it-works::after {
+  content: "";
+  display: block;
+  width: 10.625rem;
+  height: 0.0625rem;
+  background-color: var(--cyan);
+}
+
+.how-it-works .icon-arrow {
+  display: inline-block;
+  width: 1.25rem;
+  height: 1.25rem;
+  vertical-align: middle;
+  margin-left: 0.125rem;
+  margin-bottom: 0.125rem;
+}
+
+#testimonials {
+  background: var(--main-bg);
+  display: flex;
+  align-items: center;
+  gap: 1.875rem;
+  padding: 0 9.375rem;
+  position: relative;
+  padding-bottom: 18.75rem;
+}
+
+.bg-quotes {
+  position: absolute;
+  top: -7%;
+}
+
+.testimonial {
+  background: var(--testimonials-bg);
+  border-radius: 0.3125rem;
+  color: #fff;
+  padding: 1.875rem;
+  position: relative;
+  z-index: 10;
+}
+
+.quote {
+  font-size: 0.875rem;
+  margin-bottom: 1.25rem;
+  line-height: 1.5;
+}
+
+.person {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  font-size: 0.875rem;
+}
+
+.avatar {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+}
+
+#newsletter {
+  background: var(--intro-and-email-bg);
+  width: 60%;
+  position: absolute;
+  bottom: -4%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  text-align: center;
+  padding: 3.125rem;
+}
+
+.newsletter-title {
+  font-size: 2rem;
+  margin-bottom: -0.9375rem;
+}
+
+.newsletter-description {
+  font-size: 0.875rem;
+  width: 80%;
+  margin: 1.875rem auto;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.9375rem;
+  position: relative;
+  color: var(--error);
+}
+
+.error-message {
+  position: absolute;
+  left: 8%;
+  bottom: -50%;
+
+  display: none;
+}
+
+input {
+  padding: 0.9375rem;
+  border-radius: 3.125rem;
+  border: none;
+  outline: none;
+  width: 60%;
+}
+
+button.get-started-btn {
+  border: none;
+  outline: none;
+  padding: 0.9375rem 1.5625rem;
+  cursor: pointer;
+}
+
+#footer {
+  background: var(--footer-bg);
+  padding-top: 12.5rem;
+  padding-bottom: 1.875rem;
+  color: #fff;
+  font-size: 0.875rem;
+}
+
+.footer-logo {
+  margin-left: 4.375rem;
+  margin-bottom: 1.875rem;
+}
+
+.footer-info {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+
+.location-paragraph {
+  width: 25%;
+  position: relative;
+  line-height: 1.5;
+}
+
+.icon-location {
+  position: absolute;
+  left: -7.5%;
+}
+
+.contact li:first-of-type {
+  margin-bottom: 1.25rem;
+}
+
+.icon-contact {
+  margin-right: 0.9375rem;
+}
+
+.footer-nav-links {
+  width: 6%;
+}
+
+.footer-nav-link {
+  margin-bottom: 1.25rem;
+}
+
+.footer-nav-link a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer-nav-link a:hover {
+  font-weight: 700;
+}
+
+.footer-nav-links .footer-nav-link:last-of-type {
+  margin-bottom: 0;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.social-icons a {
+  border: 0.0625rem solid #fff;
+  border-radius: 50%;
+  padding: 0.4375rem 0.8125rem;
+}
+
+.social-icons a i {
+  color: #fff;
+  font-size: 0.875rem;
+}
